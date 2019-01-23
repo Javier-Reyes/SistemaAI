@@ -29,10 +29,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
     @NamedQuery(name = "ActividadesEInstrumentos.findAll", query = "SELECT a FROM ActividadesEInstrumentos a")
     , @NamedQuery(name = "ActividadesEInstrumentos.findByIdActividadInstPk", query = "SELECT a FROM ActividadesEInstrumentos a WHERE a.idActividadInstPk = :idActividadInstPk")
-    , @NamedQuery(name = "ActividadesEInstrumentos.findByPlanEjecucionMed", query = "SELECT a FROM ActividadesEInstrumentos a WHERE a.planEjecucionMed = :planEjecucionMed")
-    , @NamedQuery(name = "ActividadesEInstrumentos.findByPlanGlobalFamilia", query = "SELECT a FROM ActividadesEInstrumentos a WHERE a.planGlobalFamilia = :planGlobalFamilia")
-    , @NamedQuery(name = "ActividadesEInstrumentos.findByPlanVida", query = "SELECT a FROM ActividadesEInstrumentos a WHERE a.planVida = :planVida")
-    , @NamedQuery(name = "ActividadesEInstrumentos.findByPlanIndAplicMed", query = "SELECT a FROM ActividadesEInstrumentos a WHERE a.planIndAplicMed = :planIndAplicMed")})
+    })
 public class ActividadesEInstrumentos implements Serializable {
 
     private static final long serialVersionUID = 1L;
